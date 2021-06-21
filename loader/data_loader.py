@@ -58,4 +58,13 @@ for element in element_recipes:
         element_tuples_dict[name] = int(rank)
     element_recipes[element] = element_tuples_dict
 
+# Fix the data reverse_fusion_chart
+for element in reverse_fusion_chart:
+    element_tuples_list = []
+    for element_recipe in double_element_recipes[element]:
+        element_groups = re.search("(.+) x (.+)", element_recipe)
+        tuple_element = element_groups.groups(0)
+        element_tuples_list.append(tuple_element)
+    reverse_fusion_chart[element] = element_tuples_list
+
 
