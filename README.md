@@ -1,2 +1,2 @@
 # persona-fusion-explorer
-Find the shortest and cheapest to obtain the desired persona 
+Find the shortest and cheapest to obtain the desired persona.
